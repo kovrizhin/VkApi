@@ -40,8 +40,8 @@ def save_music(songList, directory):
 directory = raw_input("File Directory: ")
 # email = raw_input("Email: ")
 # password = getpass.getpass()
-email = "o.v.kovrizhin@gmail.com"
-password = "kovrizhka11"
+email = ""
+password = ""
 token, user_id = vk_auth.auth(email, password, "3714507", "audio")
 oid = raw_input("Please enter userId or grope Id, feel free if you want download music from your profile:\n")
 if oid == "":
