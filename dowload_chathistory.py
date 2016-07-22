@@ -24,8 +24,8 @@ def call_api(method, params, token):
 def get_chathistory(user_id, token, startId, len):
     return call_api("messages.getHistory", [("uid", "163769"), ("offset", startId), ("count", len)], token)
 
-email = "o.v.kovrizhin@gmail.com"
-password = "kovrizhka11"
+email = ""
+password = ""
 token, user_id = vk_auth.auth(email, password, "3714507", "messages")
 
 loop = True
